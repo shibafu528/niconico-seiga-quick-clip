@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Niconico Seiga Quick Clip",
+    "version": "1.0.3",
+    "description": "ニコニコ静画のクリップ登録を、クリップ先を選択するだけで済むようにします。",
+    "icons": {
+        "128": "niconico-seiga-quick-clip.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://seiga.nicovideo.jp/seiga/im*",
+                "https://seiga.nicovideo.jp/seiga/im*"
+            ],
+            "js": ["script.js"],
+            "run_at": "document_start"
+        }
+    ]
+}
